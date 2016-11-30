@@ -1,0 +1,340 @@
+.login {
+	width: 100%;
+	height: 100%;
+	font-size: 12px;
+	background: #f8f8f8;
+	color: #999999;
+}
+
+ul li{
+	list-style: none;
+}
+
+/*-----------------------------------------中间的主题部分-----------------------------------*/
+
+.center {
+	width: 1002px;
+	margin: 0 auto;
+}
+
+
+/*------------------头部--------------*/
+
+.header {
+	height: 100px;
+}
+
+.head_center {
+	width: 998px;
+	height: 67px;
+	line-height: 67px;
+}
+
+.head_center img {
+	margin-top: 6px;
+	margin-left: 4px;
+}
+
+.head_center span,
+.head_center b {
+	position: relative;
+	top: -9px;
+	font-size: 25px;
+	margin-left: 3px;
+}
+
+
+/*----------------------------------------点击登录按钮后的画面----------------------------*/
+
+#load_box{
+	width: 988px;
+	margin: 0 auto;
+	height: 500px;
+	text-align: center;
+	font-size: 50px;
+	display: none;
+}
+#load_box img{
+	width: 150px;
+	height: 150px;
+	margin-top: 200px;
+}
+
+
+/*----------------------------------------------中间的主体部分--------------------------------*/
+
+/*---左半部分-----*/
+
+.left_content {
+	width: 640px;
+	height: 588px;
+	background: url(../img/images/bg11.jpg) no-repeat;
+	float: left;
+}
+
+
+/*---右半部分----*/
+
+.right_content {
+	width: 358px;
+	float: right;
+}
+
+.right_content h1 {
+	font-size: 30px;
+	color: #ea5e00;
+	padding: 55px 0 18px 2px;
+}
+
+.bottom ul li {
+	margin-top: 12px;
+}
+
+.bottom ul .li_1,
+.bottom ul .no_border {
+	width: 270px;
+	height: 41px;
+	border: 1px solid #bcbcbc;
+	padding-left: 10px;
+	background: #fff;
+}
+
+.bottom ul .li_1 input,
+.bottom ul .no_border input {
+	width: 270px;
+	height: 39px;
+	border: none;
+	outline: none;
+}
+
+.bottom ul .no_border {
+	width: 135px;
+}
+
+.bottom ul .no_border input {
+	width: 133px;
+}
+
+.code_content {
+	position: relative;
+	display: block;
+	left: 137px;
+	top: -43px;
+	width: 115px;
+	height: 43px;
+	line-height: 43px;
+	padding-left: 20px;
+	font-size: 25px;
+	color: #333;
+	letter-spacing: 8px;
+}
+
+.shuaxin {
+	position: relative;
+	left: 249px;
+	top: -73px;
+	font-size: 50px;
+	font-weight: bold;
+	color: #333333;
+	cursor: pointer;
+}
+
+.password span {
+	color: #333333;
+}
+
+.password a {
+	margin-left: 157px;
+	color: #333;
+	text-decoration: underline;
+}
+
+.box_line {
+	width: 270px;
+	height: 2px;
+	border-bottom: 1px solid #d7d7d7;
+	margin-bottom: 20px;
+}
+
+#load {
+	width: 280px;
+	height: 44px;
+	color: #fff;
+	background-color: RGB(180, 7, 7);
+	border-color: RGB(180, 7, 7);
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+
+/*----下方qq微信  等等----*/
+
+.r {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 28px;
+	text-decoration: none;
+	color: #fff;
+}
+
+.qq {
+	background: #3d78bf;
+}
+
+.zfb {
+	background: #15a0d6;
+}
+
+.weixin {
+	background: #44b035;
+	font-size: 14px;
+}
+
+.register {
+	margin-top: 15px;
+	margin-bottom: 22px;
+	font-size: 12px;
+	color: #333333;
+}
+
+.register a {
+	font-size: 14px;
+	color: #ff9937;
+	font-weight: 700;
+	margin-left: 20px;
+}
+
+.register a:hover {
+	text-decoration: underline;
+}
+
+.box_shadow_out {
+	width: 1123px;
+	height: 2px;
+	border-bottom: 1px solid #d7d7d7;
+	margin: 0 auto;
+	margin-top: 630px;
+}
+
+
+/*---底部版权问题----*/
+
+#footer {
+	width: 100%;
+	margin-top: 32px;
+}
+
+#subfooter {
+	width: 988px;
+	margin: 0 auto;
+}
+
+#subfooter .footer_p1 {
+	width: 988px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#subfooter .footer_p1 span {
+	color: #999999;
+	font-size: 14px;
+}
+
+#subfooter .footer_p1 a {
+	text-decoration: underline;
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 12px;
+	color: #999999;
+}
+
+#subfooter .footer_p2 {
+	line-height: 24px;
+	color: #999999;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#hide {
+	display: none;
+	font-size: 25px;
+	width: 988px;
+	margin: 0 auto;
+	color: #333;
+	min-height: 500px;
+	line-height: 500px;
+	text-align: center;
+}
+
+
+/*-----------------------------隐藏部分--------------------------------------*/
+
+
+/*--隐藏的块公共样式----*/
+
+.a {
+	position: absolute;
+	color: #ff9937;
+	background: #FAF5D8;
+	padding: 5px 10px 5px 10px;
+	border: 1px solid #C5C5C5;
+	border-radius: 5px;
+}
+
+.a b {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	text-align: center;
+	line-height: 18px;
+	background: #ff9937;
+}
+
+.s {
+	position: absolute;
+	top: -6px;
+	left: 10px;
+	display: block;
+	width: 11px;
+	height: 7px;
+	background: url(../img/小图标/little.png) no-repeat;
+	background-position: -110px -101px;
+}
+
+
+/*---私有样式-----*/
+
+.tel_hide1 {
+	right: 381px;
+	top: 294px;
+	display: none;
+}
+
+.tel_hide2 {
+	right: 312px;
+	top: 292px;
+	display: none;
+}
+
+.tel_hide3 {
+	right: 409px;
+	top: 407px;
+	display: none;
+}
+
+
+/*---私有样式结束----*/
+
+.tanhao {
+	font-size: 12px;
+	color: #fff;
+}
+
+.a span {
+	margin-left: 5px;
+}

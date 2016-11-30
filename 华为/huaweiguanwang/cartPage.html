@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车</title>
+		<script src="js/jquery-3.1.0.min.js"></script>
+		<script src="js/jquery.cookie.js"></script>
+		<script src="js/cartPage.js"></script>
+		<link href="css/cartPage.css" type="text/css" rel="stylesheet" />
+		<link href="css/icon.css" type="text/css" rel="stylesheet"/>
+		<link href="css/common_style.css" type="text/css" rel="stylesheet"/>
+	</head>
+	
+	<body>
+		<!----------------------------------------------------head 头部------------------------------------->
+		<div id="head">
+			<div id="subHead">
+				<!---headLeft-------->
+				<div class="headLeft">
+					<ul>
+						<li>
+							<a class="left1" href="#">华为官网</a><span>|</span></li>
+						<li>
+							<a href="#">荣耀官网</a><span>|</span></li>
+						<!-----headLeft  二级导航------>
+						<li class="user">
+							<a class="left3" href="#">软件应用<i></i></a>
+							<span>|</span>
+							<p class="left3_p1">
+							<p>
+								<a href="#">EMUI</a>
+							</p>
+							<p>
+								<a href="#">应用市场</a>
+							</p>
+							<p>
+								<a href="#">云服务</a>
+							</p>
+							<p class="aLast">
+								<a class="plast" href="#">开发者联盟</a>
+							</p>
+						</li>
+						<li>
+							<a href="#">花粉俱乐部</a><span>|</span></li>
+						<li>
+							<a href="#">Select Region</a>
+						</li>
+					</ul>
+				</div>
+				<!---headRight-------->
+				<div class="headRight">
+					<div class="user_cookie"><span>用户：</span><em></em></div>
+					<ul>
+						<li>
+							<a id="dl" href="enter.html">登录</a>
+						</li>
+						<li>
+							<a id="zc" href="registerPage.html">注册</a><span>|</span></li>
+						<li>
+							<a href="#">v码（优购码）</a><span>|</span></li>
+						<li>
+							<a href="#">手机版</a><span>|</span></li>
+						<!-----headRight 二级导航--->
+						<li id="lizh">
+							<a class="left3" href="#">网站导航<i></i></a>
+							<p class="left3_p1">
+							<p>
+								<a href="#">帮助中心</a>
+							</p>
+							<p>
+								<a href="#">PC软件</a>
+							</p>
+							<p>
+								<a href="#">数字音乐</a>
+							</p>
+							<p>
+								<a href="#">爱旅</a>
+							</p>
+							<p class="aLast">
+								<a href="#">华为网盘</a>
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<!----------------------------------------头部结束--------------------------------------->	
+	<!--------------------------------------头部下面的商标和购物车指示------------------------------>
+		<div id="cart_point">
+			<div id="subcart_point">
+				<!--左边的logo----->
+				<div class="point_left">
+					<a href="firstPage.html" title="华为商城"><img src="img/小图标/Logo.png"/></a>
+				</div>
+				<!---右边的指示------>
+				<div class="point_right">
+					<!---------我的购物车----------->
+					<div class="my_cart point-cart"></div>
+					<!----------核对订单--------------->
+					<div class="check_cart point-cart"></div>
+					<!-------------成功提交订单----------->
+					<div class="submit_cart point-cart"></div>
+				</div>
+			</div>
+		</div>
+	<!-----------------------------------------购物车详情------------------------------------->
+		<div class="cart_det">
+			<div class="subcart_det">
+				<!----最上面的一栏----->
+				<div class="list-head">
+					<table>
+						<tr>
+							<th class="th1"><input type="checkbox" name="" id="caoz" value="" /></th>
+							<th class="th2">商品</th>
+							<th class="th3">单价 （元）</th>
+							<th class="th4">数量</th>
+							<th class="th5">小计 （元）</th>
+							<th class="th6">操作</th>
+						</tr>
+					</table>
+				</div>
+				<!------下面的商品详情------------>
+				<div class="cart_list">
+<!--					<div class="cart_detail">
+						<table>
+							<tr>
+								<td class="th1 td1"><input type="checkbox" name="" id="caozuo"  value="前面的按钮" /></td>
+								<td class="td2"><div class="pro_area">
+									<p class="p_img"><a href="javascript:;" title="哈哈"><img src="img/gg.jpg"/></a></p>
+									<p class="p_name"><a href="#" title="哈哈">名字</a><br/><span>sfd</span></p>
+								</div></td>
+								<td class="th3 td3"><span>价钱</span></td>
+								<td class="th4 td4"><div class="add">
+									<input type="text" name="addV" id="addCount" value="数量" />
+									<p class="kua"><span class="jia j"></span><span class="jian j"></span></p>
+								</div></td>
+								<td class="th5 td5"><b>总价</b></td>
+								<td class="th6 td6"><a href="javascript:;" title="删除"><i class="iconfont">&#xe63d;</i></a></td>
+							</tr>
+						</table>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<!-----------------------------------------全选  删除选中商品一栏---------------------------->
+		<div class="delete">
+			<div class="delete_cart">
+				<div class="delete_left">
+					<input type="checkbox" name="" id="allInp" value="" />
+					<sapn class="l">全选 </sapn>
+					<a class="all_delete" href="javascript:;" title="删除选中商品">删除所有商品</a>
+				</div>
+				<div class="delete_right">
+					<p class="line">总计金额：￥<span class="l" id="addPrice">0</span></p>
+					<p class="line">共节省：<span class="l" id="savePrice">￥0.00</span></p>
+					<p class="no_line">合计（不含运费）：<span class="l">￥</span><span class="l" id="addMoney">0</span></p>
+				</div>
+			</div>
+		</div>
+		<div class="go_on">
+			<a class="a1 g" href="listPage.html">继续购物</a>
+			<a class="a2 g" href="javascript:;">去结算</a>
+		</div>
+		<!-------------------------------点击去结算页面------------------------------------------>
+		<div class="go_money">
+			<p class="sure_dress">收货人信息<a href="javascript:;" title="使用新地址">[使用新地址]</a></p>
+			<div class="sure_add"><p>您还没有收获地址，马上<a href="#" title="添加">添加</a>吧！</p></div>
+			<p>发票信息（注：如果商品由第三方卖家销售，发票内容由其卖家决定，发票由卖家开具并寄出）</p>
+			<div class="sure_ele"><span>电子发票</span><span>个人</span><a href="javascript:;" title="修改">修改</a></div>
+		</div>
+		<!------------------------------------------尾部    口号    部分--------------------------------------------->
+		<div id="slogan">
+			<div id="subslogan">
+				<ul>
+					<li class="s1">
+						<i></i> 500强企业 品质保证
+					</li>
+					<li class="s2">
+						<i></i> 7天退货 15天换货
+					</li>
+					<li class="s3">
+						<i></i> 99元起免运费
+					</li>
+					<li class="s4">
+						<i></i> 448家维修网点 全国联保
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!----------------------------------------尾部   服务   部分------------------------------------------>
+		<div id="service">
+			<div id="subservice">
+				<dl class="help">
+					<dd>
+						<i></i> 帮助中心
+					</dd>
+					<dt>
+				 		<ol>
+					 		<li><a href="#">购物指南</a></li>
+					 		<li><a href="#">配送方式</a></li>
+					 		<li><a href="#">支付方式</a></li>
+					 		<li><a href="#">常见问题</a></li>
+				 		</ol>
+				 	</dt>
+				</dl>
+				<dl class="serve">
+					<dd>
+						<i></i> 售后服务
+					</dd>
+					<dt>
+				 	<ol>
+				 		<li><a href="#">保修政策</a></li>
+				 		<li><a href="#">退换货政策</a></li>
+				 		<li><a href="#">退换货流程</a></li>
+				 		<li><a href="#">保修状态查询</a></li>
+				 	</ol>						
+					</dt>
+				</dl>
+				<dl class="skill">
+					<dd>
+						<i></i> 技术支持
+					</dd>
+					<dt>
+				 	<ol>
+				 		<li><a href="#">售后网点</a></li>
+				 		<li><a href="#">荣耀零食店铺</a></li>
+				 		<li><a href="#">预约维修</a></li>
+				 		<li><a href="#">手机寄修服务</a></li>
+				 		<li><a href="#">维修配件价格查询</a></li>
+				 		<li><a href="#">软件下载</a></li>
+				 	</ol>						
+					</dt>
+				</dl>
+				<dl class="store">
+					<dd>
+						<i></i> 关于商城
+					</dd>
+					<dt>
+				 	<ol>
+				 		<li><a href="#">公司介绍</a></li>
+				 		<li><a href="#">华为商城简介</a></li>
+				 		<li><a href="#">联系客服</a></li>
+				 	</ol>						
+					</dt>
+				</dl>
+				<dl class="we">
+					<dd>
+						<i></i> 关注我们
+					</dd>
+					<dt>
+				 	<ol>
+				 		<li><a href="#">新浪微博</a></li>
+				 		<li><a href="#">腾讯微博</a></li>
+				 		<li><a href="#">花粉俱乐部</a></li>
+				 		<li><a href="#">商城手机版</a></li>
+				 	</ol>						
+					</dt>
+				</dl>
+			</div>
+		</div>
+		<!---------------------------------------尾部    footer----------------------------------------->
+		<div id="footer">
+			<div id="subfooter">
+				<!--------尾部  友情链接--------->
+				<div id="link">
+					<p>友情链接：|
+						<a href="#">华为官网</a>|
+						<a href="#">华为消费者服务</a>|
+						<a href="#">荣耀官网</a>|
+						<a href="#">花粉俱乐部</a>|
+						<a href="#">莫塞尔商城</a>|
+						<a href="#">爱旅官网</a>|
+						<a href="#">华为应用市场</a>|
+						<a href="#">万表网</a>|
+						<a href="#">中商情报网</a>|
+						<a href="#">刷机精灵</a>|
+						<a href="#">优购物官网</a>|
+						<a href="#">智能电视</a>|
+						<a href="#">UC浏览器</a>|
+					</p>
+					<p>
+						<a href="#">中关村商城</a>|
+						<a href="#">酷狗音乐</a>|
+						<a href="#">华为商城手机版</a>|
+						<a href="#">百信手机网</a>|
+						<a href="#">卡宝宝网</a>|
+						<a href="#">多特软件下载</a>|
+						<a href="#">同步助手</a>|
+						<a href="#">蜂鸟摄影网</a>|
+						<a href="#">奇珀论坛</a>|
+						<a href="#">家具商城</a>|
+						<a href="#">拍鞋网商城</a>|
+						<a href="#">欧宝丽珠宝</a>|
+						<a href="#">寻购网</a>|
+						<a href="#">亿智蘑菇</a>|
+						<a href="#">安卓市场</a>|
+					</p>
+					<p>
+						<a href="#">阿里巴巴生意经</a>|
+						<a href="#">手机大全</a>|
+						<a href="#">安卓软件园</a>|
+						<a href="#">卓大师刷机</a>|
+						<a href="#">智机论坛</a>|
+						<a href="#">电子产品世界</a>|
+						<a href="#">历趣网</a>|
+						<a href="#">网购返利</a>|
+						<a href="#">Apple1 10</a>|
+						<a href="#">91手机用户</a>|
+						<a href="#">移动叔叔</a>|
+						<a href="#">奥特莱斯</a>|
+						<a href="#">以旧换新</a>|
+						<a href="#">携程租车</a>|
+						<a id="aLast" href="#">申请链接>></a>
+					</p>
+				</div>
+				<!-----------尾部授权------->
+				<div id="accredit">
+					<p>
+						<a href="#">隐私政策</a>
+						<a href="#">服务协议</a> Copyright &copy; 2012-2016 VWALL.COM 版权所有 保留一切权利</p>
+					<p>
+						<a href="#"><img title="公安备案" src="img/小图标/pl.png" />苏公网安备 32011402010009</a>|
+						<a href="#">苏ICP备09062682号-9</a>|
+						<span>增值电信业务经营许可证 ：苏B2-20130048</span>|
+						<a href="#">网络文化经营许可证 ：苏网文[2015] 15990-026号</a>
+					</p>
+					<p class="pLast">
+						<a href="#"><img src="img/小图标/d1.png" title="电子营业执照" /></a>
+						<a href="#"><img src="img/小图标/d2.png" title="可信网站" /></a>
+						<a href="#"><img src="img/小图标/d3.png" title="诚信网站" /></a>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!------------------------------------------footer结束------------------------------->
+		<!--------------------------------最右侧的联系客服--------------------------------------->
+		<div id="contact">
+			<p class="to_top" title="返回顶部"><i></i></p>
+			<p class="opinion" title="意见反馈"><i></i></p>
+			<a class="esq" href="#" title="在线客服"><i></i></a>
+			<div id="survery_box">
+				<div class="h">
+					<p href="#"></p>
+				</div>
+				<table id="tab">
+					<tr>
+						<td><b>疑问类型：</b></td>
+					</tr>
+					<tr id="tr2">
+						<td>
+							<select id="type" name="type">
+								<option>请选择疑问类型</option>
+								<option>商品质量（手机，平板等软.硬件的质量）</option>
+								<option>商品缺货</option>
+								<option>物流发货（发货快慢，发错货，送件人态度等）</option>
+								<option>售货服务（服务网站，维修，退换货，客服）</option>
+								<option>网站问题（商城功能失效，不好用等）</option>
+								<option>其他问题</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<td><b>您的问题或建议：</b></td>
+					</tr>
+					<tr>
+						<td>
+							<textarea>谢谢您的宝贵建议，我们将不断改进</textarea><br />
+						</td>
+					</tr>
+					<tr>
+						<td id="ts">您的联系方式：</td>
+					</tr>
+					<tr id="lable">
+						<td>
+							<input type="text" name="" id="" value="选填，邮箱或者商铺账号" />
+						</td>
+					</tr>
+				</table>
+				<div id="yanzhs">
+					<div class="end_left">
+						<input type="text" id="srs" value="" />
+						<img id="Img" src="img/验证码/1.jpg" alt="验证码" />
+						<span onclick="reImg()">看不清，换一张</span>
+					</div>
+					<div class="end_right">
+						<input type="submit" id="sub" value="" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="dbox"></div>
+		
+	</body>
+	<script src="js/common_style.js"></script>
+	<script>
+		//随机获取验证码
+		function reImg() {
+			var img = document.getElementById("Img");
+			img.src = "img/验证码/" + Math.ceil(Math.random() * 19) + ".jpg"
+		}
+	</script>
+</html>

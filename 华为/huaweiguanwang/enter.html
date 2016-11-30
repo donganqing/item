@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>登录页</title>
+		<script src="js/jquery-3.1.0.min.js" type="application/javascript"></script>
+		<script src="js/jquery.cookie.js" type="application/javascript"></script>
+		<script src="js/enter.js" type="application/javascript"></script>
+		<link href="css/enter.css" rel="stylesheet" type="text/css">
+		<link href="css/icon.css" rel="stylesheet" type="text/css">
+	</head>
+
+	<body class="login">
+		<!--------------------------------------中间的主体部分------------------------------------->
+		<div class="center">
+			<!------header  头部------->
+			<div class="header">
+				<div class="head_center">
+					<img src="img/小图标/huaweiLogo.png" />
+					<b>|</b>
+					<span>华为商城</span>
+				</div>
+			</div>
+			<!---------------------------------------主体---------------------------------------->
+			<div class="content">
+				<!-----左边的部分----->
+				<div class="left_content"></div>
+				<!-----右边的部分-------->
+				<div class="right_content">
+					<h1>欢迎登陆华为账号</h1>
+					<div class="bottom">
+						<ul>
+							<li class="li_1 tel">
+								<input type="text" name="tel_email" id="tel_email" placeholder="手机号/邮箱地址" />
+							</li>
+							<li class="li_1">
+								<input type="password" name="load_pwd" id="load_pwd" placeholder="密码" />
+							</li>
+							<li class="no_border">
+								<input type="text" name="auth_code" id="auth_code" placeholder="不区分大小写" />
+								<div class="code">
+									<s class="code_content"></s>
+									<i class="iconfont shuaxin">&#xe619;</i>
+								</div>
+							</li>
+							<li class="password">
+								<span>
+								<input type="checkbox" name="re_mema" id="re_name"  />记住账号
+								</span>
+								<a href="javascript:;" title="忘记密码">忘记密码</a>
+							</li>
+							<li class="box_line"></li>
+							<li>
+								<input type="button" name="" id="load" value="登陆" />
+							</li>
+						</ul>
+						<p>
+							<span>或者登陆通过：</span>
+							<a class="qq r" href="#" title="QQ">
+								<i class="iconfont">&#xe6ec;</i>
+							</a>
+							<a class="zfb r" href="#" title="支付宝">
+								<i class="iconfont">&#xe61d;</i>
+							</a>
+							<a class="weixin r" href="#" title="微信">
+								<i class="iconfont">&#xe643;</i>
+							</a>
+						</p>
+						<p class="register">
+							<span>您还没有华为账号吧？</span>
+							<a href="registerPage.html" title="免费注册">免费注册</a>
+						</p>
+						<p>华为帐号是您用于访问所有华为服务的帐号。使用华为帐号登录后，您将可以使用云服务、华为商城、花粉俱乐部、应用市场、EMUI产品、华为网盘和开发者联盟。 </p>
+					</div>
+				</div>
+			</div>
+			<div id="load_box">
+				<img src="img/小图标/loading3.gif" />
+				<p>正在努力登录中...</p>
+			</div>
+			<!----------------------------------隐藏的部分------------------------------->
+			<!-----手机号----->
+			<div class="tel_hide1 a">
+				<b>
+					<i class="iconfont tanhao">&#xe65f;</i>
+				</b>
+				<span>请输入您的账号</span>
+				<s class="s"></s>
+			</div>
+			<div class="tel_hide2 a">
+				<b>
+					<i class="iconfont tanhao">&#xe65f;</i>
+				</b>
+				<span>华为账号限制在5~50个字符</span>
+				<s class="s"></s>
+			</div>
+			<!-----验证码----->
+			<div class="tel_hide3 a">
+				<b>
+					<i class="iconfont tanhao">&#xe65f;</i>
+				</b>
+				<span>验证码错误</span>
+				<s class="s"></s>
+			</div>
+			<div class="box_shadow_out"></div>
+			<!------------------------------底部-------------------------------------->
+			<div id="footer">
+				<div id="subfooter">
+					<p class="footer_p1">
+						<a href="#" title="华为隐私政策">华为隐私政策</a>
+						<a href="#" title=" 最终用户许可协议"> 最终用户许可协议</a>
+						<span>|</span>
+						<a href="#" title="常见问题">常见问题</a>
+					</p>
+					<p class="footer_p2">Copyright @ 2011-2016 华为软件技术有限公司 版权所有 保留一切权利 <br/>苏B2-20070200号 | 苏ICP备09062682号-9</p>
+				</div>
+			</div>
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,439 @@
+/*----------------------------------------------banner图片轮播-----------------------------------*/
+
+hover {
+	box-shadow: 0 0 20px #666666;
+	transform: translate3d(0, -4px, 0);
+	-webkit-transform: translate3d(0, -4px, 0);
+	transition: 1s;
+	-webkit-transition: 1s;
+}
+
+#banner {
+	position: relative;
+	width: 100%;
+	height: 448px;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+#banner img {
+	position: absolute;
+	width: 130%;
+	height: 448px;
+	margin-left: -200px;
+}
+
+#banner #img1 {
+	z-index: 4;
+}
+
+#banner #count {
+	position: absolute;
+	z-index: 6;
+	right: 80px;
+	top: 400px;
+}
+
+#banner #count ul li {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	border-radius: 10px;
+	background: #333;
+	float: left;
+	margin-left: 5px;
+}
+
+#banner #count .count1 {
+	background: #c81118;
+}
+
+
+/*--------------------------------------channel   banner 图片轮播下面的导航图----------------------------*/
+
+#channel {
+	width: 100%;
+}
+
+#subChannel {
+	width: 1210px;
+	min-height: 700px;
+	margin: 0 auto;
+}
+
+#subChannel .pic {
+	position: relative;
+	width: 1210px;
+	margin-top: 20px;
+}
+
+#subChannel .pic .picLeft {
+	width: 240px;
+	height: 160px;
+	text-align: center;
+	background: #f5f5f5;
+}
+
+#subChannel .pic .picLeft dl {
+	width: 79px;
+	height: 79px;
+	float: left;
+	border-right: 1px solid #eeeeee;
+	border-bottom: 1px solid #eeeeee;
+}
+
+#subChannel .pic .picLeft dl dd {
+	margin-top: 10px;
+}
+
+#subChannel .pic .picLeft dl dt {
+	font-size: 12px;
+	margin-bottom: 7px;
+}
+
+
+/*--------------channel 右边的3张小图-------*/
+
+#subChannel .pic .picRight {
+	position: absolute;
+	left: 240px;
+	top: 0px;
+}
+
+#subChannel .pic .picRight img {
+	float: left;
+}
+
+#subChannel .picRight li {
+	float: left;
+	margin-left: 8px;
+}
+
+
+/*------首页   热销推荐--------*/
+
+#subChannel .cell {
+	width: 1200px;
+	height: 400px;
+}
+
+#subChannel .cell h2 {
+	height: 36px;
+	width: 1200px;
+	font-size: 24px;
+	font-weight: 200;
+	color: #333;
+	padding: 32px 0 12px 0;
+}
+
+#subChannel .goodsBox {
+	width: 1200px;
+	height: 320px;
+}
+
+#subChannel .goodsBox ul li {
+	width: 239px;
+	height: 318px;
+	text-align: center;
+	border: 1px solid #EEEEEE;
+	float: left;
+	border-right: none;
+}
+
+#subChannel .goodsBox ul li #img {
+	position: absolute;
+	margin-left: -70px;
+}
+
+#subChannel .goodsBox ul li p {
+	width: 238px;
+	height: 18px;
+	margin-bottom: 27px;
+}
+
+#subChannel .goodsBox ul li h3 {
+	font-size: 14px;
+	color: #222;
+	font-weight: 400;
+	margin-top: 220px;
+}
+
+#subChannel .goodsBox ul li span {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400px;
+	color: #b0b0b0;
+	margin-top: 7px;
+}
+
+#subChannel .goodsBox ul li em {
+	display: block;
+	font-size: 14px;
+	color: #ca151c;
+	margin-top: 5px;
+}
+
+
+/*--------------小的图片轮播------------*/
+
+
+/*--------------图片------------*/
+
+#subChannel #m_banner {
+	width: 1200px;
+	height: 110px;
+	margin-top: 28px;
+}
+
+#subChannel #m_banner #img1 {
+	position: absolute;
+	z-index: 5;
+}
+
+#subChannel #m_banner a {
+	position: absolute;
+}
+
+
+/*--------------小圆点-------------*/
+
+#subChannel #count {
+	position: absolute;
+	z-index: 6;
+	right: 140px;
+	top: 1340px;
+}
+
+#subChannel #m_banner #count ul li {
+	width: 10px;
+	height: 10px;
+	cursor: pointer;
+	border-radius: 5px;
+	float: left;
+	background: #c5c5c5;
+	margin-right: 10px;
+	opacity: .5;
+}
+
+#subChannel #m_banner #count .count11 {
+	background: #ce2a32;
+}
+
+
+/*-------------------------------------main_content------------------------------------*/
+
+#main_content {
+	width: 100%;
+	min-height: 4040px;
+	background: #f5f5f5;
+	margin-top: 40px;
+	padding-top: 40px;
+}
+
+
+/*------精品手机部分--------*/
+
+#main_content .layout {
+	width: 1200px;
+	height: 651px;
+	margin: 0 auto;
+}
+
+#main_content .title {
+	position: relative;
+	height: 37px;
+}
+
+#main_content #show div ul li{
+	transition: box-shadow .5s linear;
+	-moz-transition: box-shadow .5s linear;
+	-webkit-transition: box-shadow .5s linear;
+}
+
+#main_content #show div ul li:hover{
+	box-shadow: 1px 1px 20px 5px #999999;
+}
+
+
+/*------精品手机部分  右边的小标题--------*/
+
+#main_content .title h2 {
+	font-size: 24px;
+	color: #333;
+}
+
+#main_content .title ul {
+	position: absolute;
+	left: 130px;
+	top: 0px;
+}
+
+#main_content .title ul li {
+	float: left;
+}
+
+#main_content .title ul li a {
+	margin: 0 12px;
+	color: #999;
+}
+
+#main_content .title ul li span {
+	color: #999;
+}
+
+
+/*----精品手机部分  右边的更多-----*/
+
+#main_content .title #more {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 120px;
+	height: 37px;
+}
+
+#main_content .title #more span {
+	display: inline-block;
+	width: 3px;
+	height: 3px;
+	border-radius: 3px;
+	background: #bbb;
+	margin-right: 3px;
+}
+
+#main_content .title #more a {
+	color: #666;
+	font-size: 14px;
+	padding: 0 14px;
+}
+
+#main_content .title a:hover {
+	color: #c81118;
+}
+
+#main_content .title #more a:hover {
+	color: #c81118;
+}
+
+
+/*-------精品手机    手机展示------*/
+
+#main_content #show {
+	position: relative;
+	height: 580px;
+	margin-top: 10px;
+}
+
+#main_content #show .ad {
+	width: 232px;
+}
+
+#main_content #show .ad ul li a img {
+	display: block;
+}
+
+#main_content #phone_list,
+#main_content #com_list,
+#main_content #wear_list,
+#main_content #home_list,
+#main_content #rp_list,
+#main_content #brand_list {
+	position: absolute;
+	left: 222px;
+	top: 0;
+	margin-left: 10px;
+}
+
+#main_content #phone_list ul li,
+#main_content #com_list ul li,
+#main_content #wear_list ul li,
+#main_content #home_list ul li,
+#main_content #rp_list ul li,
+#main_content #brand_list ul li {
+	width: 232px;
+	height: 280px;
+	background: #fff;
+	text-align: center;
+	float: left;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+#main_content ul li p {
+	width: 238px;
+	height: 18px;
+}
+
+#main_content ul li #img1 {
+	width: 132px;
+	height: 132px;
+	margin-top: 18px;
+}
+
+#main_content h3 {
+	font-size: 14px;
+	color: #222;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+#main_content ul li span {
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 400px;
+	color: #b0b0b0;
+	margin-top: 10px;
+}
+
+#main_content ul li em {
+	display: block;
+	font-size: 14px;
+	color: #ca151c;
+	margin-top: 10px;
+}
+
+
+/*---------电脑/笔记本-------------*/
+
+#main_content #compute {
+	width: 1200px;
+	height: 651px;
+	margin: 0 auto;
+}
+
+
+/*-----------智能穿戴      智能家居      热销配件   品牌配件---------*/
+
+#main_content #home,
+#main_content #rp,
+#main_content #brand,
+#main_content #wear {
+	width: 1200px;
+	height: 651px;
+	margin: 0 auto;
+}
+
+#main_content #home #show .had ul li img,
+#main_content #rp #show .had ul li img,
+#main_content #brand #show .had ul li img {
+	display: block;
+	clear: left;
+	margin-top: 10px;
+}
+
+#main_content #home #show .had,
+#main_content #rp #show .had,
+#main_content #brand #show .had {
+	width: 232px;
+}
+
+
+/*-------底部广告条----*/
+
+#main_content #end_ad {
+	width: 1200px;
+	height: 115px;
+	margin: 0 auto;
+}

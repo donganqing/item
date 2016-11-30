@@ -1,0 +1,565 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl,
+li,
+form,
+dd,
+dt,
+input,
+html,
+a {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #8c8c8c;
+	font-size: 14px;
+	font-family: arial, "微软雅黑";
+}
+
+ul,
+li,
+ol {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #8c8c8c;
+}
+
+img {
+	border: none;
+}
+
+em {
+	font-style: normal;
+}
+
+.reg {
+	background: rgb(241, 241, 241);
+	color: #333;
+	font-size: 12px;
+}
+
+
+/*-------------------------------头部------------------------------------------------*/
+
+#head {
+	width: 100%;
+	background: #333;
+}
+
+#subhead {
+	width: 998px;
+	height: 67px;
+	margin: 0 auto;
+	color: #fff;
+}
+
+#subhead img {
+	margin-top: 9px;
+}
+
+#subhead b,
+#subhead strong {
+	position: relative;
+	top: -13px;
+	font-size: 23px;
+	font-weight: normal;
+}
+
+
+/*-----------------------------------------------注册的主要内容---------------------------------*/
+
+#content {
+	width: 100%;
+	margin-top: 30px;
+}
+
+#subcontent {
+	position: relative;
+	width: 998px;
+	min-height: 1200px;
+	margin: 0 auto;
+}
+
+
+/*-------第一栏的内容------*/
+
+#subcontent .reg_tab a {
+	display: inline-block;
+	width: 99px;
+	padding-left: 40px;
+	height: 35px;
+	line-height: 35px;
+	color: #fff;
+	font-size: 12px;
+}
+
+#subcontent .reg_tab a span:hover {
+	text-decoration: underline;
+}
+
+#subcontent .reg_tab a span {
+	margin-left: 10px;
+}
+
+#subcontent .reg_tab a i {
+	font-size: 20px;
+}
+
+#subcontent .reg_tab .phone_num {
+	background: #eb1c24;
+}
+
+#subcontent .reg_tab .email {
+	background: #999999;
+}
+
+#subcontent .reg_tab .email i {
+	position: relative;
+	top: 4px;
+	left: -6px;
+}
+
+#subcontent .login {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+#subcontent .login a {
+	color: #C81118;
+	text-decoration: underline;
+}
+
+#subcontent .login i {
+	position: relative;
+	margin-left: -5px;
+	font-size: 16px;
+}
+
+
+/*--------------------------------------------注册的细节-----------------------------------------*/
+
+
+/*--注册华为账号----*/
+
+#subcontent .reg_detail {
+	min-height: 1160px;
+	background: #fff;
+	padding: 52px 97px 38px 97px;
+}
+
+#subcontent .reg_detail .huawei {
+	font-size: 28px;
+	color: #000;
+	font-weight: normal;
+}
+
+#subcontent .reg_detail .reg_p {
+	color: #999;
+	line-height: 16px;
+	margin-top: 19px;
+}
+
+.box_shadow_in {
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: center;
+}
+
+
+/*------华为账号-----*/
+
+#subcontent .reg_detail .node {
+	margin-top: 42px;
+	height: 200px;
+}
+
+#subcontent .reg_detail .node_title {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#subcontent .reg_detail .node_intro {
+	color: #999;
+	line-height: 16px;
+	margin-top: 19px;
+}
+
+#subcontent .reg_detail .node_des {
+	margin: 30px 53px 0 0;
+}
+
+#subcontent .reg_detail .input_intro {
+	color: #999;
+	padding: 10px 0;
+	text-align: left;
+	width: 110px;
+}
+
+#subcontent .nation .show,
+#subcontent .nation .hide {
+	width: 143px;
+	height: 36px;
+	line-height: 36px;
+	padding-left: 20px;
+	border: 1px solid #c5c5c5;
+	cursor: pointer;
+}
+
+#subcontent .nation .hide {
+	position: relative;
+	z-index: 5;
+	background: #fff;
+	margin-top: 3px;
+	border-radius: 10px;
+	display: none;
+}
+
+#subcontent .reg_detail .down {
+	position: relative;
+	top: -36px;
+	margin-left: 111px;
+	font-size: 20px;
+	color: #E0E0E0;
+}
+
+#subcontent .reg_detail .node_input {
+	position: relative;
+	left: 138px;
+	top: -36px;
+	width: 400px;
+	height: 50px;
+}
+
+
+/*-----手机号-------*/
+
+#subcontent .reg_detail .node_input .number {
+	position: absolute;
+	left: 173px;
+	top: 0px;
+}
+
+
+/*-----输入框-------*/
+
+#subcontent .node_input .number {
+	position: absolute;
+	width: 143px;
+	height: 34px;
+	border: 1px solid #c5c5c5;
+	padding-left: 20px;
+}
+
+.hide_one,
+.hide_two,
+.hide_three {
+	position: relative;
+	left: -10px;
+	top: -83px;
+	z-index: 100;
+	width: 135px;
+	height: 22px;
+	padding-right: 5px;
+	border: 1px solid #C5C5C5;
+	background: #faf5d8;
+	color: red;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 22px;
+	display: none;
+}
+
+.hide_two {
+	width: 320px;
+	height: 45px;
+}
+
+.hide_three {
+	width: 155px;
+	height: 22px;
+	top: -3px;
+}
+
+.hide_two i {
+	position: absolute;
+	top: 15px;
+	left: 10px;
+}
+
+.hide_two span {
+	position: absolute;
+	left: 30px;
+	top: 10px;
+	line-height: 15px;
+}
+
+#subcontent .node_input .error {
+	position: relative;
+	left: 173px;
+	top: -5px;
+	z-index: 10;
+	width: 159px;
+	height: 36px;
+	padding-right: 5px;
+	border: 1px solid #C5C5C5;
+	background: #faf5d8;
+	color: red;
+	border-radius: 5px;
+	display: none;
+}
+
+#subcontent .node_input .error .error_s,
+.hide_one s,
+.hide_two s,
+.hide_three s {
+	position: absolute;
+	left: 10px;
+	top: -6px;
+	display: block;
+	width: 11px;
+	height: 7px;
+	background: url(../img/小图标/little.png);
+	background-position: -110px -101px;
+}
+
+#subcontent .node_input .error span {
+	margin-left: 5px;
+	position: absolute;
+	left: 29px;
+	top: 2px;
+}
+
+#subcontent .node_input .error i {
+	position: absolute;
+	left: 10px;
+	top: 11px;
+}
+
+#subcontent .node_input #user_name {
+	position: absolute;
+	width: 131px;
+	height: 34px;
+	border: none;
+	outline: none;
+}
+
+
+/*
+#subcontent .node_input .label,
+#subcontent .yanzheng .label {
+	position: relative;
+	top: 9px;
+	color: #CCCCCC;
+	margin-left: 2px;
+}*/
+
+
+/*------验证码------*/
+
+#subcontent .yanzheng {
+	width: 300px;
+	height: 50px;
+	position: relative;
+	left: 137px;
+	top: -69px;
+}
+
+#subcontent .input_intro1 {
+	position: relative;
+	top: -41px;
+	color: #999;
+}
+
+#subcontent .yanzheng .number1 {
+	position: absolute;
+	width: 143px;
+	height: 34px;
+	border: 1px solid #c5c5c5;
+	padding-left: 15px;
+}
+
+#subcontent .yanzheng #user_name1 {
+	width: 136px;
+	height: 34px;
+	border: none;
+	outline: none;
+	cursor: text;
+}
+
+
+/*#subcontent .yanzheng .label {
+	top: -27px;
+}*/
+
+#subcontent .yanzheng #bnt {
+	position: relative;
+	left: 174px;
+	top: 01px;
+	width: 163px;
+	height: 34px;
+}
+
+
+/*----设置登录密码----*/
+
+#subcontent .password {
+	margin-top: 42px;
+}
+
+.password .password_top,
+.password .password_bottom {
+	margin-top: 30px;
+	padding-right: 270px;
+}
+
+.password .pw_top {
+	width: 314px;
+	height: 34px;
+	padding-left: 20px;
+	border: 1px solid #c5c5c5;
+	float: right;
+}
+
+.password .pw_top #pw_txt,
+.password .pw_top #sure_pw_txt {
+	width: 294px;
+	height: 34px;
+	border: none;
+	outline: none;
+}
+
+.password .pw_top .pw_label {
+	position: relative;
+	top: -26px;
+	color: #999999;
+	display: none;
+	z-index: -10;
+}
+
+.password .pw_top .pw_letter {
+	position: absolute;
+	top: 645px;
+	left: 293px;
+	color: #aaa;
+}
+
+.password .pw_top .pw_letter span {
+	display: inline-block;
+	width: 80px;
+	background: #EEEEEE;
+	text-align: center;
+	margin-left: 1px;
+}
+
+
+/*-------隐私声明    许可协议-------*/
+
+#subcontent .agreement {
+	height: 266px;
+	margin-top: 42px;
+}
+
+#subcontent .underline {
+	color: #00C0F4;
+	text-decoration: underline;
+}
+
+#subcontent .agree_bottom {
+	margin-top: 42px;
+}
+
+#subcontent .node_one {
+	margin-top: 42px;
+	color: #999;
+}
+
+
+/*---底部的按钮----*/
+
+#subcontent .bottom_bnt {
+	margin-top: 38px;
+}
+
+#subcontent .bottom_bnt #bnt_bottom {
+	position: relative;
+	left: 277px;
+	width: 279px;
+	height: 45px;
+	border: 1px solid #9c9c9c;
+	background: #d70506;
+	color: #fff;
+	font-size: 14px;
+}
+
+.box_shadow_in_bottom {
+	width: 794px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #e0e0e0;
+	text-align: center;
+}
+
+
+/*---底部版权问题----*/
+
+#footer {
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#subfooter {
+	width: 988px;
+	height: 48px;
+	margin: 0 auto;
+}
+
+#subfooter .footer_p1 {
+	width: 988px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#subfooter .footer_p1 span {
+	color: #999999;
+	font-size: 14px;
+}
+
+#subfooter .footer_p1 a {
+	text-decoration: underline;
+	font-size: 14px;
+	line-height: 18px;
+	margin-right: 12px;
+}
+
+#subfooter .footer_p2 {
+	line-height: 24px;
+	color: #999999;
+	text-align: center;
+	margin-top: 5px;
+}
+
+#hide {
+	display: none;
+	font-size: 25px;
+	width: 988px;
+	margin: 0 auto;
+	color: #333;
+	min-height: 500px;
+	line-height: 500px;
+	text-align: center;
+}

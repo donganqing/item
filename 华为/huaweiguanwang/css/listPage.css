@@ -1,0 +1,280 @@
+/*------------------------------------------------nav 里面的黑色背景-----------------------------*/
+
+#subnav #hNext ol li {
+	background: rgba(0, 0, 0, 0.5);
+}
+
+#subnav #hNext ol li h3 a span {
+	color: #FFFFFF;
+}
+
+#subnav #hNext ol li p a span {
+	color: #BBBBBB;
+}
+
+#subnav #hNext #phone a span {
+	font-size: 14px;
+}
+
+#subnav #hNext ol li:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+#subnav #h #i {
+	position: absolute;
+	left: 320px;
+	top: 18px;
+	width: 7px;
+	height: 4px;
+	background: url(../img/小图标/实心箭头.png) no-repeat;
+	background-position: -230px -27px;
+}
+
+#subnav #hNext {
+	display: none;
+	margin-left: -20px;
+}
+
+#subnav #hNext ol li p {
+	margin-top: -15px;
+}
+
+#subnav #hNext ol li .book {
+	left: 130px;
+	top: 90px;
+}
+
+#subnav #hNext ol li .head {
+	left: 75px;
+	top: 150px;
+}
+
+#subnav #rightMenu p {
+	position: absolute;
+	top: 345px;
+}
+
+#subnav #rightMenu h3 {
+	position: absolute;
+	left: 65px;
+	top: 315px;
+}
+
+#subnav #rightMenu ul li a,
+#subnav #rightMenu a {
+	font-size: 14px;
+}
+
+#subnav #rightMenu .old {
+	margin-top: 30px;
+}
+
+
+/*------------------------------------------content------------------------------------------*/
+
+#content {
+	width: 1200px;
+	min-height: 1089px;
+	margin: 0 auto;
+	padding-top: 10px;
+	font-size: 12px;
+	border-bottom: 1px solid #eee;
+}
+
+
+/*---content 顶部的top----*/
+
+#content #top span {
+	color: #333;
+	margin-left: 15px;
+}
+
+#content #top a {
+	margin: 0 15px;
+}
+
+#content #top a:hover {
+	text-decoration: underline;
+}
+
+#content a:hover {
+	color: #333;
+}
+
+
+/*------商品类别--------*/
+
+#content #condition {
+	height: 205px;
+	border: 1px solid #EDEDED;
+	margin-top: 10px;
+}
+
+#content #condition .sort,
+#content #condition .it,
+#content #condition .size {
+	height: 50px;
+	line-height: 50px;
+	border-bottom: 1px solid #EDEDED;
+}
+
+#content #condition .rank {
+	height: 50px;
+	line-height: 50px;
+}
+
+
+/*-----小图标-----*/
+
+#content #condition .rank s {
+	position: absolute;
+	top: 402px;
+	display: inline-block;
+	width: 8px;
+	height: 10px;
+	margin-top: 1px;
+	background: url(../img/小图标/实心箭头.png);
+}
+
+#content #condition .rank #pri1 {
+	left: 243px;
+	background-position: 0 -70px;
+}
+
+#content #condition .rank #pri2 {
+	left: 302px;
+	background-position: 0 -29px;
+}
+
+#content #condition .rank #pri3 {
+	left: 375px;
+	background-position: 0 -110px;
+}
+
+#content #condition .span1,
+#content #condition .span4 {
+	padding-left: 49px;
+	color: #333;
+}
+
+#content #condition .span2,
+#content #condition .span3 {
+	padding-left: 21px;
+	color: #333;
+}
+
+#content #condition span {
+	padding-left: 5px;
+}
+
+#content #condition span a {
+	margin: 0 10px;
+}
+
+#content #condition .red {
+	color: #e01d20;
+}
+
+
+/*--------手机展示----*/
+
+#content #phone_show {
+	margin-top: 20px;
+	min-height: 2000px;
+}
+
+#content #phone_show #pImg {
+	width: 180px;
+	height: 180px;
+	margin-top: 20px;
+}
+
+#content #phone_show ul li {
+	width: 224px;
+	height: 364px;
+	color: #333;
+	float: left;
+	text-align: center;
+	border: 1px solid #dedede;
+	margin-right: 14px;
+	margin-bottom: 20px;
+}
+
+#content #phone_show ul li .p_top {
+	height: 18px;
+}
+
+#content #phone_show ul li .p_name {
+	height: 55px;
+	margin-top: 25px;
+	padding: 0 20px;
+}
+
+#content #phone_show ul li .p_name .hong {
+	color: #e01d20;
+}
+
+#content #phone_show ul li .p_name a {
+	color: #333;
+}
+
+#content #phone_show ul li .p_name a:hover {
+	color: red;
+}
+
+#content #phone_show ul li .p_price {
+	margin-top: -2px;
+	font-size: 20px;
+	color: #e01d20;
+}
+
+#content #phone_show ul li .p_button {
+	width: 224px;
+	height: 29px;
+	border-top: 1px solid #dedede;
+	margin-top: 4px;
+}
+
+#content #phone_show ul li .p_button .td {
+	border-right: 1px solid #dedede;
+}
+
+#content #phone_show ul li .p_button .er {
+	padding-left: 20px;
+}
+
+#content #phone_show ul li .p_button .td a {
+	display: inline-block;
+	width: 114px;
+	height: 30px;
+	line-height: 29px;
+	color: #e01d20;
+}
+
+#content #phone_show ul li .p_button .td a:hover {
+	color: #fff;
+	background: red;
+}
+
+
+/*-----------------------------------------让border-bottom 变短居中----------------------------*/
+
+#slogan {
+	border-bottom: none;
+}
+
+#subslogan {
+	border-bottom: 1px solid #eee;
+}
+
+#service {
+	border-bottom: none;
+}
+
+#subservice {
+	border-bottom: 1px solid #eee;
+}
+
+#subfooter #accredit {
+	margin-top: -25px;
+}
