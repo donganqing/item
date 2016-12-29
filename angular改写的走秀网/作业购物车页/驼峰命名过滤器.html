@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/angular.min.js" type="application/javascript"></script>
+	</head>
+	<body>
+		<div ng-controller="filterCtrl">
+			<p>{{name|myFilter}}</p>
+		</div>
+	</body>
+	<script>
+		var m1 = angular.module( "myApp", [] )
+				.filter( "myFilter", function () {
+					return function( str ) {
+						var arr = str.split( "-" );
+						arr = arr.map( function( ele, index ){
+							if( index&&ele&&ele[0].charCodeAt()>=97&&ele[0].charCodeAt()<=122){
+								//如果是小写字母，而且第一个字母不需要大写
+								ele = ele[0].toUpperCase()+ele.substring(1);
+							}
+							return ele;
+						} )
+						return arr.join("");
+					}
+				} )
+				.controller( "filterCtrl", [ "$scope", "$filter", function( $scope,$filter ){
+					$scope.name = "dong---jing----dong-an------qing";
+				} ] )
+		
+	</script>
+</html>

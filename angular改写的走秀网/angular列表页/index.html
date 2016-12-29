@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html ng-app="myList">
+	<head>
+		<meta charset="utf-8" />
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>angular实现商品列表页</title>
+		<link href="css/common.css" rel="stylesheet" type="text/css">
+		<link href="css/listPage.css" rel="stylesheet" type="text/css">
+		<link href="http://at.alicdn.com/t/font_9h6bqrwdrc0udi.css" rel="stylesheet">
+		<script src="js/angular.min.js" type="application/javascript"></script> 
+		<script src="js/index.js" type="application/javascript"></script>
+		<script src="js/rem.js" type="application/javascript"></script> 
+	</head>
+	<body>
+		<!--头部-->
+		<div class="page" id="page-list" ng-controller="listCtrl">
+			<div class="header">
+				<ul class="header-list">
+					<li class="header-bnt"></li>                                                                     
+					<li class="header-tit">新品上市</li>
+					<li class="header-bnt header-right"><a href="cartPage.html"><i id="icon-gouwuche" class="iconfont icon-gouwuche"></i></a></li>
+				</ul>
+			</div>
+			<!--二级头部-->
+			<div class="sub-header list-header">
+				<ul class="sub-list">
+					<li ng-repeat="item in items">{{item.className}}</li>
+				</ul>
+
+			</div>
+			<div class="filter">
+				<span>关键字：</span>
+				<button ng-click="fnFilter('all')">全部</button>
+				<button ng-repeat="data in fliterData" ng-click="fnFilter($index)">{{data}}</button>
+				<span>价钱：</span>
+				<button ng-click="fnSort()">{{reverse?"价钱-":"价钱+"}}</button>
+			</div>
+			<!--内容-->
+		
+			<div class="content">
+				<ul class="pro-list">
+					<li class="pro-item" ng-repeat="data in dataList|filter:keyWord|orderBy:'price*1':reverse">
+                       <a href="#" class="pic"><img src="{{data.goodsListImg}}"></a>
+                        <p class="pro-name">{{data.goodsName}}</p>
+                        <p class="price"><em>{{data.price|currency:"￥"}}</em> <del>￥999</del></p>
+                    </li>
+				</ul>
+			</div>
+			<!--尾部-->
+			<div class="footer">
+				<ul class="foot-list clearfix">
+					<li><a href="#"><i class="iconfont icon-shouye-copy"></i><p>首页</p></a></li>
+					<li class="red"><a href="#"><i class="iconfont icon-fenlei"></i><p>分类</p></a></li>
+					<li><a href="#"><i class="iconfont icon-gouwuche1-copy"><p>购物车</p></i></a></li>
+					<li><a href="#"><i class="iconfont icon-wode5"></i><p>我的秀</p></a></li>
+					<li><a href="#"><i class="iconfont icon-gengduo"></i><p>更多</p></a></li>
+				</ul>
+			</div>
+		</div> 
+		
+	</body>
+</html>

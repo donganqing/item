@@ -1,0 +1,114 @@
+@import "libs/basic";
+
+#cart-page{
+    overflow: hidden;
+    .header{
+        i{
+            font-size: 14px;
+            font-weight: bold;
+        }
+    }
+    .sub-header{
+        height: 44px;
+        line-height: 44PX;
+        font-size: 14px;
+        color: @white;
+        background-color: #747474;
+        padding-left: 10px;
+        span{
+            margin-right: 10px;
+        }
+        .price{
+            color: @lightred;
+        }
+    }
+    .cart-content{
+        width: 100%;
+        .abs( 0, 88px );
+        bottom: 50px;
+        background: @bdCart;
+        font-size: 12px;
+        overflow: hidden;
+    }
+    
+    .cart-list{
+        width: 100%;
+        overflow-y: scroll;
+
+        li{
+           width: 100%;
+           height: 124px;
+           display: flex;
+           display: -moz-box;
+           display: -webkit-box;
+            padding: 16px;
+            background: @white;
+            border-bottom: 2px solid #cbcbcb;
+        }
+        .pro-info{
+            flex: 1;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+        }
+        .cart-img{
+            display: inline-block;
+            width: 89px;
+            height: 89px;
+            border:1px solid @border;
+            margin-right: 13px;
+        }
+        .pro-img{
+            width: 86px;
+            height: 86px;
+            
+        }
+    }
+    .pro-name{
+        height: 38px;
+        line-height: 1.6;
+        margin-bottom: 5px;
+    }
+    .pro-price{
+        line-height: 1.6;
+        margin-bottom: 5px;
+        em{
+            color: @lightred;
+        }
+        
+    }
+    .num-wrap{
+        width: 100%;
+        display: flex;
+        display: -moz-box;
+        display: -webkit-box;
+        .num-box{
+            flex: 1;
+            -webkit-box-flex: 1;
+            -moz-box-flex: 1;
+            -ms-box-flex: 1;
+            box-flex: 1;
+            margin-left: 5px;
+            margin-top: -5px;
+            .num-bnt{
+                .smallButton( @white, 22px, #aeaeae, #4f4f4f );
+                line-height: 19px;
+                display: inline-block;
+            }
+            .num-val{
+                width: 38px;
+                height: 22px;
+                text-align: center;
+                line-height: 22px;
+                box-shadow: 1px 1px 1px 1px @border inset;
+                border-radius: 3px;
+                background: @white;
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+        }
+    }
+    .del-pro{
+        color: @blaceasy;
+        font-size: 14px;
+    }
+}

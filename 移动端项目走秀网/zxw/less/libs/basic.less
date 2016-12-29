@@ -1,0 +1,75 @@
+/*-------背景色---------*/
+@bgbody: #f3f4f6;/*----------列表页body色-----------*/
+@bgdetail: #f3eff0;/*--------详情页body色--------*/
+@bdCart: #f7f7f7;/*-----------购物车也body色-------*/
+@bgheader: #ad1b1b;/*-----头部颜色------*/
+@bgsubheader: #9a9fa5;/*---------二级头部------*/
+@bgfooter: #484850;/*----尾部颜色--------*/
+@bgdetailfoot: #a3a3a3;/*----详情页尾部颜色--------*/
+
+/*-------字体颜色---------*/
+@lightred: #d51113;/*-------亮红--------*/
+@redRose:#b90b53;/*-------玫红--------*/
+@redFlower: #fb0e52;/*----忘记密码红-----*/
+@white: #FFFFFF;/*--------白色-----------*/
+@black: #393a3c;/*---------黑色-----------*/
+@blaceasy: #5b5b5b;/*------登录也浅黑色-------*/
+@gran: #878787;/*---------灰色------------*/
+@btnColor:#fff; /*按钮的字体颜色*/
+@letter: #656565;/*----------详情页的字体颜色-----*/
+
+@border: #bababa;/*---购物车页边框色-----*/
+
+.abs(@left, @top){
+    position: absolute;
+    left: @left;
+    top: @top;
+}
+.abs1(@left, @botom){
+    position: absolute;
+    left: @left;
+    bottom: @botom;
+}
+.size(@width,@height){
+    width: @width;
+    height: @height;
+}
+
+.sheng(){
+    overflow: hidden;
+    white-space: normal;
+    text-overflow: ellipsis;
+    display: block;
+}
+
+
+/*--------------大按钮-----------------*/
+.bigButton(@color, @height, @startColor, @endColor){
+    color: @color;
+    width: 100%;
+    display: block;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 4px;
+    letter-spacing: 5px;
+    height: @height;
+    line-height: @height;
+    background: @startColor;
+    background: -webkit-linear-gradient(top, @startColor 0%,@endColor 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, @startColor 0%,@endColor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.smallButton(@color, @height, @startColor, @endColor){
+    color: @color;
+    height: @height;
+    line-height: @height;
+    text-align: center;
+    display: block;
+    width: 30px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 7px;
+    background: @startColor;
+    background: -webkit-linear-gradient(top, @startColor 0%,@endColor 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, @startColor 0%,@endColor 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

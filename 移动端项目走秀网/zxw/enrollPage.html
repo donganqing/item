@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>用户注册页面</title>
+		<link href="http://at.alicdn.com/t/font_2h3snnwm1zcl3di.css" rel="stylesheet">
+		<link href="css/common.css" rel="stylesheet" type="text/css">
+		<link href="css/enrollPage.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<div class="page" id="enroll-page">
+			<!--头部-->
+			<div class="header">
+				<ul class="header-list">
+					<li class="header-bnt"><i class="iconfont icon-zuojiantou"></i></li>
+					<li class="header-tit">用户注册</li>
+				</ul>
+			</div>
+			<!--content 主要内容-->
+			<div class="enroll-content">
+				<div class="user-info">
+					<input type="text" name="" id="enroll-name" class="user-bnt" value="" placeholder="请输入账户" />
+					<span class="user-bnt1">账户名称：</span>
+					<input type="text" name="" id="enroll-pwd" class="user-bnt" value="" placeholder="请输入密码" />
+					<span class="user-bnt2">登录密码：</span>
+					<input type="text" name="" id="sure-pwd" class="user-bnt" value="" placeholder="请确认密码" />
+					<span class="user-bnt3">确认密码：</span>
+				</div>
+				<div class="sure-enroll">
+					<span class="sure-sure">确定注册</span>
+				</div>
+			</div>
+			<!--成功注册页面-->
+			<div class="enroll-success">
+				成功注册！
+			</div>
+			<!--用户名重复-->
+			<div class="enroll-error">
+				该用户已注册！
+			</div>
+			<!--完善内容-->
+			<div class="complete">
+				请完善内容！
+			</div>
+		</div>
+		<script src="js/libs/jquery-1.12.3.min.js" type="application/javascript"></script>
+		<script src="js/enrollPage.js" type="application/javascript"></script>
+	</body>
+</html>

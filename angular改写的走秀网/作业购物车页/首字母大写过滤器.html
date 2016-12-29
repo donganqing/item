@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>每个单词的首字母大写过滤器</title>
+		<script src="js/angular.min.js" type="application/javascript"></script>
+	</head>
+	<body>
+		<div ng-controller="filterCtrl">
+			<p>{{word|myFilter}}</p>
+			
+		</div>
+	</body>
+	<script>
+		var m1 = angular.module( "myApp",[] )
+				.filter( "myFilter",function(){
+					return function( str ){
+						var arr = str.split( " " );
+						console.log(arr);//成功截取字符串  
+						arr = arr.map( function( ele, index ){//map循环 参1元素  参2下标
+							if( ele&&ele[0].charCodeAt()>=97&&ele[0].charCodeAt()<=122 ){
+								//把截取的字符串首字母大写+下标为1的后面的字符串
+								ele = ele[0].toUpperCase() + ele.substring( 1 );
+								console.log(ele)
+							}
+							return ele;
+						} );
+						return arr.join(" ");//用“ ”连接字符串
+					}
+				} )
+				.controller( "filterCtrl", [ "$scope","$filter",function($scope,$filter){
+					$scope.word = "hello world i love world";
+				} ] )
+		
+	</script>
+</html>

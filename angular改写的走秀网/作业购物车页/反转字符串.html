@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>自定义过滤器反转字符串</title>
+		<script src="js/angular.min.js" type="application/javascript"></script>
+	</head>
+	<body>
+		<div ng-controller="filterCtrl">
+			<p>{{name|myFilter}}</p>
+		</div>
+	</body>
+	<script>
+		var m1 = angular.module( "myApp", [] )
+				.filter( "myFilter", function(){
+					return function( str ){
+						var arr = str.split("");
+						console.log(arr);//获取单个字母
+						var rs = new Array;
+						while( arr.length ){
+							rs.push( arr.pop() );
+						}
+						console.log(rs.join( "" ));//
+						return rs.join( "" );
+					}
+				} )
+				.controller( "filterCtrl", [ "$scope", "$filter", function( $scope, $filter){
+					$scope.name = "Dongjing"; 
+				} ] )
+		
+	</script>
+</html>

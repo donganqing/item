@@ -1,0 +1,85 @@
+/*-------背景色---------*/
+/*----------列表页body色-----------*/
+/*--------详情页body色--------*/
+/*-----------购物车也body色-------*/
+/*-----头部颜色------*/
+/*---------二级头部------*/
+/*----尾部颜色--------*/
+/*----详情页尾部颜色--------*/
+/*-------字体颜色---------*/
+/*-------亮红--------*/
+/*-------玫红--------*/
+/*----忘记密码红-----*/
+/*--------白色-----------*/
+/*---------黑色-----------*/
+/*------登录也浅黑色-------*/
+/*---------灰色------------*/
+/*按钮的字体颜色*/
+/*----------详情页的字体颜色-----*/
+/*---购物车页边框色-----*/
+/*--------------大按钮-----------------*/
+#page-list .list-header {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.content {
+  position: absolute;
+  left: 0;
+  top: 74px;
+  bottom: 50px;
+  overflow: scroll;
+  width: 100%;
+}
+#downLoad {
+  color: #878787;
+  position: absolute;
+  left: 43%;
+  top: 6%;
+}
+.pro-list {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  background: #f3f4f6;
+}
+.pro-item {
+  margin-top: 10px;
+  width: 3.2rem;
+  float: left;
+  padding: 0.2rem 0.37rem;
+}
+.pro-item .pic {
+  width: 2.44rem;
+  box-shadow: 0 0 1px #000;
+  display: block;
+  padding: 0.06rem;
+}
+.pro-item img {
+  width: 2.32rem;
+  height: 2.44rem;
+}
+.pro-item p {
+  line-height: 1.8;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+}
+.pro-item .p1 {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+.pro-item .price {
+  overflow: hidden;
+}
+.pro-item em {
+  float: left;
+  color: #d51113;
+  font-size: 16px;
+}
+.pro-item del {
+  float: right;
+  color: #878787;
+}

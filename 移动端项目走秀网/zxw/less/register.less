@@ -1,0 +1,53 @@
+
+@import "libs/basic";
+
+#page-register{
+    .content{
+        width: 100%;
+        height: 100%;
+        .abs( 0, 44px );
+        background: @bgdetail;
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .register-top{
+        width: 100%;
+        margin-bottom: 25px;
+
+        & input{
+            width: 100%;
+            padding: 13px 10px;
+            background: @white;
+            margin-top: 5px;
+            border-radius: 5px;
+        }
+    }
+    .register-center{
+        li{
+            margin-bottom: 20px;
+            color: @blaceasy;
+        }
+        .show-pwd{
+            margin-right: 20px;
+        }
+        .forget-pwd{
+            color: @redFlower;
+        }
+    }
+    .register-bottom{
+        width: 100%;
+        li{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+        input{
+            .bigButton( @white, 44px, #d70909, #a90506 );
+        }
+        a{
+            display: inline-block;
+            .bigButton( @white, 44px, #5e5e5e, #242424 );
+        }
+    }
+    
+}

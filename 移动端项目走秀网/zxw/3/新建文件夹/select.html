@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        * { margin: 0; padding: 0;}
+
+        .select-wrap { margin: 50px auto; width: 200px; position: relative  }
+        h3 { height: 40px; line-height: 40px; padding: 0 10px; border: 1px solid #ccc}
+        h3:after {content: "";position: absolute; right: 10px; top: 17px; width: 0; height: 0;
+            border: 10px solid transparent; border-top-color:#999; transition: .5s;
+        }
+        .select-show:after { transform-origin:  50% 25%;transform: rotate(180deg); }
+        .select-list  { position: absolute; left: 0; top: 42px;  width: 100%; border: 1px solid #ccc }
+        .select-list li { list-style: none; border-bottom: 1px solid #ccc; line-height: 30px; padding: 0 10px; cursor: pointer; background-color: #FFF}
+        .select-list li:hover { background-color: #66f}
+    </style>
+
+    <script src="../build/react.min.js"></script>
+    <script src="../build/react-dom.min.js"></script>
+    <script src="../build/react-with-addons.js"></script>
+    <script src="../build/browser.min.js"></script>
+    <!--顺序不能变-->
+</head>
+<body>
+
+<script src="js/select.js" type="text/babel"></script>
+
+</body>
+</html>

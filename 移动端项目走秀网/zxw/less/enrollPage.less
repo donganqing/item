@@ -1,0 +1,77 @@
+@import "libs/basic";
+
+#enroll-page{
+    overflow: hidden;
+   .header-list{
+       padding-left: 10px;
+   } 
+   .enroll-content{
+       .abs( 0, 44px );
+       width: 100%;
+       height: 100%;
+       background: @bgdetail;
+       padding: 14px;
+       .user-bnt{
+           width: 100%;
+           height: 44px;
+           background: @white;
+           margin-bottom: 14px;
+           border-radius: 5px;
+           padding-left: 80px;
+       }
+       .user-info{
+           position: relative;
+           font-size: 14px;
+       }
+       .user-bnt1{
+           .abs( 2%, 7% );
+       }
+       .user-bnt2{
+           .abs( 2%, 41% );
+       }
+       .user-bnt3{
+           .abs( 2%, 74% );
+       }
+   }
+   .sure-sure{
+       .bigButton( @white, 47px, #d70909, #aa0404 );
+       margin-top: 80px;
+       font-size: 19px;
+   }
+   .enroll-success{
+       .abs( 0, 44px );
+       z-index: 10;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       padding-top: 55%;
+       font-size: 24px;
+       color: green;
+       background: @bgdetail;
+       display: none;
+   }
+   .enroll-error{
+       .abs( 0, 44px );
+       z-index: 10;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       padding-top: 55%;
+       font-size: 24px;
+       color: @lightred;
+       background: @bgdetail;
+       display: none;
+   }
+   .complete{
+       .abs( 0, 44px );
+       z-index: 10;
+       width: 100%;
+       height: 100%;
+       text-align: center;
+       padding-top: 55%;
+       font-size: 24px;
+       color: yellow;
+       background: @bgdetail;
+       display: none;
+   }
+}

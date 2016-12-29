@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>angular版购物车页</title>
+		<link href="css/common.css" rel="stylesheet" type="text/css">
+		<link href="css/cartPage.css" rel="stylesheet" type="text/css">
+		<link href="http://at.alicdn.com/t/font_r9y29qa3bbv86w29.css" rel="stylesheet">
+		<script src="js/angular.min.js" type="application/javascript"></script>
+		<script src="js/cart.js" type="application/javascript"></script> 
+	</head>
+	<body>
+		<div class="page" id="cart-page" ng-controller="cartCtrl">
+			<!--头部-->
+			<div class="header">
+				<ul class="header-list">
+					<li class="header-bnt"></li>
+					<li class="header-tit">购物车</li>
+					<li class="header-bnt header-right"><i  class="iconfont">结算</i></li>
+				</ul>
+			</div>
+			<!--二级头部-->
+			<div class="sub-header list-header">
+				<span class="pro-count">商品数量：<em id="pro-count" ng-bind="totalNumber"></em></span>	
+				<span class="add-price">应付总额：<em class="price" id="pay-addPrice" ng-bind="totalPrice|currency"></em></span>
+			</div>
+			<!--中间的内容-->
+			<div class="cart-content">
+				<ul class="cart-list">
+					<li ng-repeat="dataList in cartData">
+						<a class="cart-img" href="#"><img class="pro-img" ng-src="{{dataList.goodsListImg}}"/></a>
+						<div class="pro-info">
+							<p class="pro-name">{{dataList.goodsName}}</p>
+							<p class="pro-price">单价：<em>{{dataList.price|currency}}</em></p>
+							<div class="num-wrap">
+								<span class="num-count">数量：</span>
+								<div class="num-box">
+									<button class="num-bnt" ng-click="fnChange(-1, $index)">-</button>
+									<input type="text" name="" ng-value="dataList.number" class="num-val" />
+									<button class="num-bnt" ng-click="fnChange(1,$index)">+</button>
+								</div>
+							</div>
+						</div>
+						<button class="del-pro" ng-click="fnChange(0,$index)"><i class="icon iconfont icon-delete"></i></button>
+					</li>
+				</ul>
+			</div>
+			<!--尾部-->
+			<div class="footer">
+				<ul class="foot-list clearfix">
+					<li><a href="#"><i class="iconfont icon-shouye-copy"></i><p>首页</p></a></li>
+					<li><a href="#"><i class="iconfont icon-fenlei"></i><p>分类</p></a></li>
+					<li class="red"><a href="#"><i class="iconfont icon-gouwuche1-copy"><p>购物车</p></i></a></li>
+					<li><a href="#"><i class="iconfont icon-wode5"></i><p>我的秀</p></a></li>
+					<li><a href="#"><i class="iconfont icon-gengduo"></i><p>更多</p></a></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>

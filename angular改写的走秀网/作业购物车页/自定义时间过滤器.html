@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自定义过滤器过滤日期时间</title>
+		<script src="js/angular.min.js" type="application/javascript"></script>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="myFilterDate">
+			<p>{{data|myFilter}}</p>
+		</div>
+	</body>
+	<script>
+		var m1 = angular.module( "myApp",[] )
+				.filter( "myFilter",function(){
+					return function(){
+						var date = new Date();
+						var year = date.getFullYear();
+						var month = date.getMonth()+1;
+						var day = date.getDate();
+						var hour = date.getHours();
+						var min = date.getMinutes();
+						var seconds = date.getSeconds();
+						console.log(year+";"+month+";"+day)
+						var newDate = year+"/"+month+"/"+day+ " " +hour+ ":" + min+ ":" +seconds;
+						return newDate;
+					}
+				} )
+				.controller( "myFilterDate",[ "$scope","$filter", function( $scope,$filter ){
+						$scope.data = new Date();
+				} ] )
+		
+		
+	</script>
+</html>
+

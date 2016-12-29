@@ -1,0 +1,142 @@
+/*-------背景色---------*/
+/*----------列表页body色-----------*/
+/*--------详情页body色--------*/
+/*-----------购物车也body色-------*/
+/*-----头部颜色------*/
+/*---------二级头部------*/
+/*----尾部颜色--------*/
+/*----详情页尾部颜色--------*/
+/*-------字体颜色---------*/
+/*-------亮红--------*/
+/*-------玫红--------*/
+/*----忘记密码红-----*/
+/*--------白色-----------*/
+/*---------黑色-----------*/
+/*------登录也浅黑色-------*/
+/*---------灰色------------*/
+/*按钮的字体颜色*/
+/*----------详情页的字体颜色-----*/
+/*---购物车页边框色-----*/
+/*--------------大按钮-----------------*/
+
+#cart-page {
+  overflow: hidden;
+}
+#cart-page .header i {
+  font-size: 14px;
+  font-weight: bold;
+}
+#cart-page .sub-header {
+  height: 44px;
+  line-height: 44PX;
+  font-size: 14px;
+  color: #FFFFFF;
+  background-color: #747474;
+  padding-left: 10px;
+}
+#cart-page .sub-header span {
+  margin-right: 10px;
+}
+#cart-page .sub-header .price {
+  color: #d51113;
+}
+#cart-page .cart-content {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 88px;
+  bottom: 50px;
+  background: #f7f7f7;
+  font-size: 12px;
+  overflow: hidden;
+}
+#cart-page .cart-list {
+  width: 100%;
+  height: 100%;
+	overflow: scroll;
+}
+#cart-page .cart-list li {
+  width: 100%;
+  height: 124px;
+  display: flex;
+  display: -moz-box;
+  display: -webkit-box;
+  padding: 16px;
+  background: #FFFFFF;
+  border-bottom: 2px solid #cbcbcb;
+}
+#cart-page .cart-list .pro-info {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+}
+#cart-page .cart-list .cart-img {
+  display: inline-block;
+  width: 89px;
+  height: 89px;
+  border: 1px solid #bababa;
+  margin-right: 13px;
+}
+#cart-page .cart-list .pro-img {
+  width: 86px;
+  height: 86px;
+}
+#cart-page .pro-name {
+  height: 38px;
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+#cart-page .pro-price {
+  line-height: 1.6;
+  margin-bottom: 5px;
+}
+#cart-page .pro-price em {
+  color: #d51113;
+}
+#cart-page .num-wrap {
+  width: 100%;
+  display: flex;
+  display: -moz-box;
+  display: -webkit-box;
+}
+#cart-page .num-wrap .num-box {
+  flex: 1;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  margin-left: 5px;
+  margin-top: -5px;
+}
+#cart-page .num-wrap .num-box .num-bnt {
+  color: #FFFFFF;
+  height: 22px;
+  line-height: 22px;
+  display: block;
+  width: 30px;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 7px;
+  background: #aeaeae;
+  background: -webkit-linear-gradient(top, #aeaeae 0%, #4f4f4f 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #aeaeae 0%, #4f4f4f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  line-height: 19px;
+  display: inline-block;
+}
+#cart-page .num-wrap .num-box .num-val {
+  width: 38px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  box-shadow: 1px 1px 1px 1px #bababa inset;
+  border-radius: 3px;
+  background: #FFFFFF;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+#cart-page .del-pro {
+  color: #5b5b5b;
+  font-size: 14px;
+}
