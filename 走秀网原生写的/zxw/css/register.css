@@ -1,0 +1,91 @@
+/*-------背景色---------*/
+/*----------列表页body色-----------*/
+/*--------详情页body色--------*/
+/*-----------购物车也body色-------*/
+/*-----头部颜色------*/
+/*---------二级头部------*/
+/*----尾部颜色--------*/
+/*----详情页尾部颜色--------*/
+/*-------字体颜色---------*/
+/*-------亮红--------*/
+/*-------玫红--------*/
+/*----忘记密码红-----*/
+/*--------白色-----------*/
+/*---------黑色-----------*/
+/*------登录也浅黑色-------*/
+/*---------灰色------------*/
+/*按钮的字体颜色*/
+/*----------详情页的字体颜色-----*/
+/*---购物车页边框色-----*/
+/*--------------大按钮-----------------*/
+#page-register .content {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 44px;
+  background: #f3eff0;
+  padding: 15px;
+  font-size: 14px;
+}
+#page-register .register-top {
+  width: 100%;
+  margin-bottom: 25px;
+}
+#page-register .register-top input {
+  width: 100%;
+  padding: 13px 10px;
+  background: #FFFFFF;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#page-register .register-center li {
+  margin-bottom: 20px;
+  color: #5b5b5b;
+}
+#page-register .register-center .show-pwd {
+  margin-right: 20px;
+}
+#page-register .register-center .forget-pwd {
+  color: #fb0e52;
+}
+#page-register .register-bottom {
+  width: 100%;
+}
+#page-register .register-bottom li {
+  width: 100%;
+  margin-bottom: 5px;
+}
+#page-register .register-bottom input {
+  color: #FFFFFF;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 5px;
+  height: 44px;
+  line-height: 44px;
+  background: #d70909;
+  background: -webkit-linear-gradient(top, #d70909 0%, #a90506 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d70909 0%, #a90506 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+#page-register .register-bottom a {
+  display: inline-block;
+  color: #FFFFFF;
+  width: 100%;
+  display: block;
+  font-size: 15px;
+  text-align: center;
+  border-radius: 4px;
+  letter-spacing: 5px;
+  height: 44px;
+  line-height: 44px;
+  background: #5e5e5e;
+  background: -webkit-linear-gradient(top, #5e5e5e 0%, #242424 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #5e5e5e 0%, #242424 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}

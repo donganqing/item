@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+    var C = {};//中间对象
+
+
+    (function () {
+        var A = {
+            name:"我就是A",
+            num:1
+        };
+
+        C.changeNum=function (num) {
+            this.num = num;
+            //this=>A
+            console.log(this)
+        }.bind(A)
+    }());
+
+
+    (function () {
+        var B = { };
+
+        C.changeNum(20)
+    }());
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * { margin: 0; padding: 0;}
+        div { padding: 100px; border: 1px solid #999999; border-radius: 50%; background-color: green}
+        .active { background-color: skyblue}
+        .active1 { background-color: red}
+    </style>
+</head>
+<body>
+
+    <div id="div1">
+        div1
+        <div id="div2">
+            div2
+            <div id="div3">
+                div3
+            </div>
+        </div>
+    </div>
+<script>
+
+    var aDiv =document.getElementsByTagName("div");
+
+    for(var i=0;i<aDiv.length;i++){
+        /*aDiv[i].onclick=function () {
+            this.className = "active"
+        }*/
+
+        //捕获
+        aDiv[i].addEventListener("click",function () {
+            console.log(this.id);
+            this.className = "active1"
+        },true);
+        //冒泡
+        aDiv[i].addEventListener("click",function () {
+            console.log(this.id);
+            this.className = "active"
+        },false);
+
+
+    }
+
+    function  Person(name) {
+       /* if(this==window||!this){
+            return {
+                name:name
+            }
+        }else {
+            this.name = name
+        }*/
+
+        //console.log(this&&this.constructor===Person)
+
+    }
+
+    var man1 =  Person("陈阔");
+    console.log(man1)
+</script>
+</body>
+</html>

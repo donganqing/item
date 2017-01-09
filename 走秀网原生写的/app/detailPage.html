@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>商品详情页面</title>
+		<link href="css/common.css" type="text/css" rel="stylesheet">
+		<link href="css/detailPage.css" type="text/css" rel="stylesheet">
+		<link href="http://at.alicdn.com/t/font_mryed17dy7y3z0k9.css" rel="stylesheet">
+		<link href="css/swiper.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="page" id="page-detail">
+			<!--头部-->
+			<div class="header">
+				<ul class="header-list">
+					<li class="header-bnt"><a href="listPage.html"><i class="iconfont icon-jiantou"></i></a></li>
+					<li class="header-tit">商品资料</li>
+					<li class="header-bnt header-right"><a href="cartPage.html"><i id="icon-gouwuche" class="iconfont icon-gouwuche"></i></a></li>
+				</ul>
+			</div>
+			<!--主要内容-->
+			<div class="content">
+				<!--轮播图-->
+				<div class="detail-swiper">
+					<div class="swiper-container">
+					    <div class="swiper-wrapper">
+					        <!--<div class="swiper-slide"><img src="img/11.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/11.jpg"/></div>
+					        <div class="swiper-slide"><img src="img/11.jpg"/></div>-->
+					    </div>
+					    <!-- 如果需要分页器 -->
+					    <div class="swiper-pagination"></div>
+					</div>
+					<!--<div class="detail-bnt">
+						<ul class="bnt-list">
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>-->
+				</div>
+				<!--商品信息-->
+				<div class="detail-pro">
+					<ul class="detail-name" id="good-name">
+						<!--<li>美特斯邦威 &nbsp;米底红色花朵印花短袖连衣裙</li>
+						<li><em>￥85.00</em><del>159.00</del></li>
+						<li>购买人数：<span>209</span></li>-->
+					</ul>
+				</div>
+				
+			</div>
+			<!--底部-->
+			<div class="detail-footer">
+				<div class="look-wrap">
+					<ul>
+						<li><img src="img/1.jpg"/></li>
+						<li><a href="#">查看商品详情</a></li>
+						<li><i class="iconfont icon-jiantouyou"></i></li>
+					</ul>
+					
+				</div>
+				<div class="add-wrap">
+					<button class="add-cart">添加到购物车</button>
+				</div>
+			</div>
+		</div>
+		<!--加载动图-->
+		<div id="loading">
+        <div class="loading-img">
+            <img src="img/loading.gif" />
+        </div>
+    	</div>
+		<script src="js/libs/jquery-1.12.3.min.js" type="application/javascript"></script>
+		<script src="js/libs/swiper.js" type="application/javascript"></script>
+		<script src="js/libs/fnBase.js" type="application/javascript"></script>
+		<script src="js/detailPage.js" type="application/javascript"></script> 
+	</body>
+</html>

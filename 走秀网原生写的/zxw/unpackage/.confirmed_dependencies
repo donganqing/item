@@ -1,0 +1,60 @@
+{
+	"listPage.html": {
+		"resources": [
+			"img/2.jpg",
+			"css/listPage.css",
+			"css/common.css",
+			"img/1.jpg",
+			"img/4.jpg",
+			"js/libs/rem.js",
+			"img/3.jpg",
+			"js/libs/iscroll-probe.js",
+			"js/listPage.js",
+			"js/libs/jquery-1.12.3.min.js",
+			"detailPage.html",
+			"img/loading.gif",
+			"cartPage.html"
+		],
+		"refer": [
+			"detailPage.html",
+			"cartPage.html"
+		]
+	},
+	"detailPage.html": {
+		"resources": [
+			"css/detailPage.css",
+			"css/common.css",
+			"img/1.jpg",
+			"css/swiper.min.css",
+			"js/libs/swiper.min.js",
+			"img/11.jpg",
+			"js/libs/jquery-1.12.3.min.js",
+			"js/detailPage.js",
+			"js/libs/fnBase.js",
+			"js/libs/swiper.js",
+			"listPage.html",
+			"cartPage.html"
+		],
+		"refer": [
+			"listPage.html",
+			"cartPage.html"
+		]
+	},
+	"enrollPage.html": {
+		"resources": [
+			"js/enrollPage.js",
+			"css/enrollPage.css",
+			"css/common.css",
+			"js/libs/jquery-1.12.3.min.js"
+		]
+	},
+	"cartPage.html": {
+		"resources": [
+			"css/cartPage.css",
+			"js/cartPage.js",
+			"css/common.css",
+			"js/libs/iscroll-probe.js",
+			"js/libs/jquery-1.12.3.min.js"
+		]
+	}
+}

@@ -1,0 +1,13 @@
+
+
+
+/*登录部分*/
+
+.login-list { padding: 10px; font-size: 14px;}
+.login-list li { padding: 5px;}
+.text-bar { width: 100%; height: 40px; background-color: #fff; padding: 13px;}
+
+.go-forget { margin: 0 10px;}
+
+.login-in,.go-reg { display: block;width: 100%; height: 40px; line-height: 40px; text-align: center; background-color: #333; color:#Fff}
+.go-reg {background-color: #ccc;}
